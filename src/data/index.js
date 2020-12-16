@@ -62,30 +62,6 @@ const data = [
     done: false,
     description: 'TAREFA CONCLUIDA',
   },
-  {
-    id: uuidv4(),
-    task: 'Comprar uma mesa nova',
-    done: false,
-    description: 'TAREFA CONCLUIDA',
-  },
-  {
-    id: uuidv4(),
-    task: 'Comprar um monitor novo',
-    done: false,
-    description: 'TAREFA CONCLUIDA',
-  },
-  {
-    id: uuidv4(),
-    task: 'Comprar mais roupas',
-    done: false,
-    description: 'TAREFA CONCLUIDA',
-  },
-  {
-    id: uuidv4(),
-    task: 'Pedir um dads burguer',
-    done: false,
-    description: 'TAREFA CONCLUIDA',
-  },
 ];
 
 export default data;

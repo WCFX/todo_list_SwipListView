@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components/native';
 const AddItemArea = styled.View`
   flex-direction: row;
   background-color: #ccc;
+  margin-bottom: 20px;
 `;
 
 const Input = styled.TextInput`

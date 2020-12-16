@@ -1,11 +1,15 @@
 import React from 'react';
+import { Image } from 'react-native';
 import styled, { css } from 'styled-components/native';
 
-const Item = styled.TouchableOpacity`
+import IconArrow from '../assets/arrow.png';
+
+const Item = styled.TouchableHighlight`
   flex-direction: row;
   padding: 10px 20px;
   background-color: #eee;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 const ItemText = styled.Text`
@@ -29,11 +33,18 @@ const ItemCheck = styled.View`
       width: 30%;
     `}
 `;
+const Indicator = styled.View`
+  width: 10px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #897de0;
+`;
 
 export default ({ data, Checkbox }) => {
   return (
-    <Item onPress={Checkbox} activeOpacity={0.7}>
+    <Item onPress={Checkbox} underlayColor="#ccc">
       <>
+        {data.done === true && <Indicator style={{ position: 'absolute' }} />}
         <ItemText checkDone={data.done}>{data.task}</ItemText>
         <ItemText checkDone={data.done}>
           {data.done === true ? data.description : ''}
