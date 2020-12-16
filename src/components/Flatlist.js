@@ -1,8 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
 import styled, { css } from 'styled-components/native';
-
-import IconArrow from '../assets/arrow.png';
 
 const Item = styled.TouchableHighlight`
   flex-direction: row;
